@@ -96,7 +96,6 @@ setup(
     package_data={
         "procgen": [
             "version.txt",
-            *asset_relpaths,
         ]
     },
     extras_require={"test": ["pytest==6.2.5", "pytest-benchmark==3.4.1"]},
@@ -107,5 +106,5 @@ setup(
     description="Procedurally Generated Game-Like RL Environments",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/openai/procgen",
+    url="https://github.com/YukunJ/procgen",
 )
