@@ -38,7 +38,7 @@ def determine_version():
     if sha == "unknown":
         return version
     else:
-        return version + "+" + sha[:7]
+        return version
 
 version = determine_version()
 
@@ -83,7 +83,7 @@ asset_paths = glob.glob(os.path.join(PACKAGE_ROOT, "data", "**"), recursive=True
 asset_relpaths = [os.path.relpath(path, PACKAGE_ROOT) for path in asset_paths]
 
 setup(
-    name="procgen",
+    name="procgen-yukun",
     packages=find_packages(),
     version=version,
     install_requires=[
@@ -107,5 +107,5 @@ setup(
     description="Procedurally Generated Game-Like RL Environments",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/openai/procgen",
+    url="https://github.com/YukunJ/procgen",
 )
